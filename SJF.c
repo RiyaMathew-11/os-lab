@@ -68,7 +68,7 @@ for(i=0; i<n_processes; i++){
 printf("\nProcess\t\t\tBurstTime\t\t\tWaiting Time\t\t\tTurnaround Time");
 
 for(i=0; i<n_processes; i++){
-  printf("\nP%d\t\t\t\t\t%d\t\t\t\t\t\t%d\t\t\t\t\t\t%d", i+1, sjf_burst_time[i], sjf_waiting_time[i], sjf_turn_aroundtime[i]);
+  printf("\nP%d\t\t\t\t\t%d\t\t\t\t\t\t%d\t\t\t\t\t\t%d", process_id[i], sjf_burst_time[i], sjf_waiting_time[i], sjf_turn_aroundtime[i]);
 
 }
 
@@ -78,4 +78,3 @@ printf("Average Waiting Time: %0.2f", avg_wait_time/n_processes);
 printf("\nAverage Turnaround Time: %0.2f\n", avg_turnaround_time/n_processes);
 
 }
- 
