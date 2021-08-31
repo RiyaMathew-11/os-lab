@@ -5,7 +5,7 @@
 
 int enable_sync; // Check to enable or disable synchronisation
 
-int semaphore;
+int semaphore = 1;
 int slp__ms = 100;
 
 
@@ -71,7 +71,7 @@ int main(){
   pthread_t tp, tc;
 
   // Fixiing flag
-  semaphore = (choice==1) ? 1 : 0 ;
+  enable_sync = (choice==1) ? 1 : 0 ;
 
   pthread_create(&tp, NULL, (void*)producer_process, NULL);
 	pthread_create(&tc, NULL, (void*)consumer_process, NULL);
