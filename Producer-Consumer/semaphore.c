@@ -51,7 +51,6 @@ void consumer_process() {
 
     usleep(slp__ms);
     printf("%d ", buffer[i]);
-    fflush(stdout);
     i++;
 
     signal();
